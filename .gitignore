@@ -9,6 +9,7 @@
 /coverage
 
 .next
+template.md 
 
 # production
 /build
