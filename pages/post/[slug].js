@@ -37,6 +37,12 @@ export default function PostPage({ frontmatter, content }) {
         <meta content={frontmatter.metaTitle} property="og:title" />
         <meta content={frontmatter.metaDesc} property="og:description" />
         <meta content={`https://kcm78.github.io/${frontmatter.socialImage}`} property="og:image" />
+        <meta content="summary_large_image" name="twitter:card" />
+        <meta content="@kinee78" name="twitter:creator" />
+        <meta content="@kinee78" name="twitter:site" />
+        <meta content={frontmatter.metaTitle} name="twitter:title" />
+        <meta content={frontmatter.metaDesc} name="twitter:description" />
+        <meta content={`https://kcm78.github.io/${frontmatter.socialImage}`} name="twitter:image" />
       </Head>
       <div className='prose mx-auto mt-12'>
         <h1>{frontmatter.title}</h1>
