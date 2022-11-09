@@ -34,6 +34,9 @@ export default function PostPage({ frontmatter, content }) {
         <title>{frontmatter.metaTitle}</title>
         <meta name="description" content={frontmatter.metaDesc} />
         <meta name="keywords" content={frontmatter?.tags} />
+        <meta content={frontmatter.metaTitle} property="og:title" />
+        <meta content={frontmatter.metaDesc} property="og:description" />
+        <meta content={frontmatter.socialImage} property="og:image" />
       </Head>
       <div className='prose mx-auto mt-12'>
         <h1>{frontmatter.title}</h1>
