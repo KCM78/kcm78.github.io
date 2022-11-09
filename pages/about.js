@@ -1,16 +1,17 @@
 import Image from 'next/image';
-import Head from 'next/head';
+import PageWrapper from '../components/PageWrapper';
+import PageHeader from '../components/PageHeader';
 
 export default function About() {
+  const pageTitle = "About"
   return (
     <>
-      <Head>
-        <title>Kenny Mooney | About</title>
-        <meta name="description" content="About Kenny Mooney, York-based Scottish writer and software developer" />
-        <meta name="keywords" content="kenny mooney, glasgow, york, writer, software developer, the gift garden, desk clerk, in the vast and boundless deep" />
-      </Head>
-      <div className='w-3/4 container mx-auto mt-12'>
-        <h1 className='leading-tight text-3xl text-black font-medium'>About</h1>
+      <PageHeader 
+        title={pageTitle}
+        description="About Kenny Mooney, York-based Scottish writer and software developer"
+        tags="kenny mooney, glasgow, york, writer, software developer, the gift garden, desk clerk, in the vast and boundless deep"
+      />
+      <PageWrapper title={pageTitle}>
         <div className='relative grid grid-cols-4 gap-x-4 md:grid-cols-8 lg:grid-cols-12 lg:gap-x-6 mx-auto max-w-7xl lg: mb-24 h-auto pt-8 lg:min-h-[40rem] lg:pb-12 lg:mb-64'>
           <div className='col-span-full pt-6 lg:col-start-1 lg:row-start-1 lg:flex lg:h-full lg:flex-col lg:col-span-5'>
             <div className='flex flex-auto flex-col'>
@@ -29,7 +30,7 @@ export default function About() {
             <Image className='mt-4' src='/images/kenny.jpeg' width='400' height='400' alt='kenny mooney' />
           </div>
         </div>
-      </div>
+      </PageWrapper>
     </>
   )
 }

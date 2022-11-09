@@ -1,17 +1,18 @@
 import Book from '../components/Book';
 import { BookData } from '../lib/BookData';
-import Head from 'next/head';
+import PageWrapper from '../components/PageWrapper';
+import PageHeader from '../components/PageHeader';
 
 export default function Books() {
+  const pageTitle="Books";
   return (
     <>
-      <Head>
-        <title>Kenny Mooney | Books</title>
-        <meta name="description" content="Books by Kenny Mooney, York-based Scottish writer and software developer" />
-        <meta name="keywords" content="kenny mooney, glasgow, york, writer, software developer, the gift garden, desk clerk, in the vast and boundless deep" />
-      </Head>
-      <div className='w-3/4 container mx-auto mt-12'>
-        <h1 className='leading-tight text-3xl text-black font-medium'>Books</h1>
+      <PageHeader
+        title={pageTitle}
+        description="Books by Kenny Mooney, York-based Scottish writer and software developer"
+        tags="kenny mooney, glasgow, york, writer, software developer, the gift garden, desk clerk, in the vast and boundless deep"
+      />
+      <PageWrapper title={pageTitle}>
         {BookData.map((book) => (
           <Book 
             key={book.title} 
@@ -22,7 +23,7 @@ export default function Books() {
             imgHeight={book.imgHeight}
           />
         ))}
-      </div>
+      </PageWrapper>
     </>
   )
 }
