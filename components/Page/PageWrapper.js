@@ -1,4 +1,3 @@
-
 export default function PageWrapper({ children, title }) {
   return (
     <div className='w-3/4 container mx-auto mt-12'>

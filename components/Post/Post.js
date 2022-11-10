@@ -12,9 +12,11 @@ export default function Post({ slug, frontmatter }) {
           src={`/${frontmatter.socialImage}`}
         />              
       </Link>
-    <div className='absolute bottom-0 left-0 bg-white bg-opacity-75 w-full px-4 text-sm opacity-0 hover:opacity-100 duration-500'>
-      {frontmatter.title}
+      <Link href={`/post/${slug}`}>
+        <span className='absolute bottom-0 left-0 bg-white bg-opacity-75 w-full h-1/2 px-4 text-sm opacity-0 hover:opacity-100 duration-500'>
+          {frontmatter.title}
+        </span>
+      </Link>
     </div>
-  </div>
   )
 }

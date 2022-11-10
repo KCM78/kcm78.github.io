@@ -1,6 +1,6 @@
 import fs from 'fs';
 import matter from 'gray-matter';
-import Post from '../components/Post';
+import Post from '../components/Post/Post';
 
 export async function getStaticProps() {
   const files = fs.readdirSync('posts');

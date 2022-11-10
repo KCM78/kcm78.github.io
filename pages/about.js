@@ -1,6 +1,6 @@
 import Image from 'next/image';
-import PageWrapper from '../components/PageWrapper';
-import PageHeader from '../components/PageHeader';
+import PageWrapper from '../components/Page/PageWrapper';
+import PageHeader from '../components/Page/PageHeader';
 
 export default function About() {
   const pageTitle = "About"

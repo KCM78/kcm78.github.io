@@ -1,7 +1,7 @@
-import Book from '../components/Book';
+import Book from '../components/Book/Book';
 import { BookData } from '../lib/BookData';
-import PageWrapper from '../components/PageWrapper';
-import PageHeader from '../components/PageHeader';
+import PageWrapper from '../components/Page/PageWrapper';
+import PageHeader from '../components/Page/PageHeader';
 
 export default function Books() {
   const pageTitle="Books";
