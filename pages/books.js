@@ -14,14 +14,7 @@ export default function Books() {
       />
       <PageWrapper title={pageTitle}>
         {BookData.map((book) => (
-          <Book 
-            key={book.title} 
-            title={book.title} 
-            content={book.content} 
-            image={book.image} 
-            imgWidth={book.imgWidth}
-            imgHeight={book.imgHeight}
-          />
+          <Book key={book.title} bookData={book} />
         ))}
       </PageWrapper>
     </>

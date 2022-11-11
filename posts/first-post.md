@@ -6,10 +6,12 @@ socialImage: "images/blog/church.png"
 imgWidth: 400
 imgHeight: 200
 tags:
-  - nextjs, react
+  - nextjs, react, writing
 ---
 
 ## Welcome to the new kennymooney.com
-After a while with no website, I've put together a new blog/website. I've written this from the ground up in NextJS, rather than using another WordPress installation. As great as WordPress is, I've found the last few versions getting increasingly bloated and clunky, and frankly a pain to use. Writing this myself has been a fun learning process. I'm already pretty familiar with React itself, so using the Next framework has been a great little project. I also made use of TailwindCSS for the styling - I've never used a CSS library before, so that was new. It did make me realise just how out of practice I am with CSS though.
+So this is my new website. I've had a few over the last few years, and often I just let them die off because my own self-doubt can just get the better of me and that leads to online self-destruction.
 
-The other cool thing about writing this myself is I've been able to dispense with a database on the backend completely. All the blog posts are done in Markdown and then parsed to HTML. As a result the site is hosted entirely on my own github.
+I'm trying though. This is a new site, a new start at things. For those interested in the technical aspects (this is my job, after all), this is built from the ground up in [NextJS](https://nextjs.org/), with [TailwindCSS](https://tailwindcss.com/) for styling. It is hosted on my github, so no irritating web hosting account. Also no WordPress installation to get in the way.
+
+Yes, it is a bit bare around here, but this is an ongoing work in progress, and the blog will fill up as I post more often. I'd like to do something with it this time, so will see what happens there.
