@@ -13,9 +13,9 @@ export default function Post({ slug, frontmatter }) {
         />              
       </Link>
       <Link href={`/post/${slug}`}>
-        <div className='absolute bottom-0 left-0 bg-white w-full h-1/2 px-4 text-sm opacity-0 hover:opacity-80 duration-500'>
-          <p className='mt-2 font-medium'>{frontmatter.title}</p>
-          <p>{frontmatter.metaDesc}</p>
+        <div className='absolute top-0 left-0 bg-white w-full h-1/2 px-4 text-sm opacity-0 hover:opacity-80 duration-500'>
+          <h1 className='mt-2 text-lg font-medium'>{frontmatter.title}</h1>
+          <p className='mt-4'>{frontmatter.metaDesc}</p>
         </div>
       </Link>
     </div>
