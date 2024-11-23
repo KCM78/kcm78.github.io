@@ -1,6 +1,7 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto');
+
 html {
-  font-family: 'Courier New', Courier, monospace;
-  font-size: 10pt;
+  font-family: 'Roboto', sans-serif;
 }
 
 article {
@@ -9,6 +10,11 @@ article {
 
 header {
   margin-top: 10px;
+}
+
+.page-header {
+  margin: 20px 0 0 20px;
+  font-size: 1.5rem;
 }
 
 ul {
@@ -29,6 +35,27 @@ a:hover {
   color: darkred;
 }
 
+.book-container {
+  display: grid;
+  align-items:start;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 5px;
+}
+
+.book-image > img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
 .book-text {
-  float: left;
+  font-size: 2rem;
+}
+
+.book-text > p {
+  margin: 0;
+  padding: 0;
+}
+
+.book-text > .book-info {
+  font-size: 1.5rem;
 }
