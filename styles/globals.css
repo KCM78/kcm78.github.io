@@ -1,7 +1,24 @@
 @import url('http://fonts.googleapis.com/css?family=Roboto');
 
+html,
+body {
+  height: 100%;
+}
+
 html {
   font-family: 'Roboto', sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 5px;
+}
+
+.content {
+  flex: 1 0 auto;
 }
 
 article {
@@ -14,6 +31,12 @@ section>header {
 
 header {
   margin-top: 10px;
+}
+
+footer {
+  flex-shrink: 0;
+  padding: 20px;
+  font-size: 0.8rem;
 }
 
 .page-header {
