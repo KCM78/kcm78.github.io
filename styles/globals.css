@@ -67,13 +67,15 @@ a:hover {
 .book-container {
   display: grid;
   align-items: start;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 0.5fr 1fr;
   column-gap: 5px;
 }
 
 .book-image>img {
   max-width: 90%;
   max-height: 90%;
+  display: block;
+  margin: auto;
 }
 
 .book-text {
